@@ -10,8 +10,8 @@ When(/^I choose "(.*?)"$/) do |radio|
   choose(radio)
 end
 
-When(/^I press "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+When(/^I press "(.*?)"$/) do |button|
+  click_button(button)
 end
 
 Then(/^I should see "(.*?)"$/) do |arg1|
