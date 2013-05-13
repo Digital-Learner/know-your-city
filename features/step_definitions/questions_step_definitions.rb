@@ -1,5 +1,5 @@
 Given(/^I am on the statements create page$/) do
-  pending # express the regexp above with the code you wish you had
+  visit(new_question_path)
 end
 
 When(/^I fill in "(.*?)" with "(.*?)"$/) do |arg1, arg2|
