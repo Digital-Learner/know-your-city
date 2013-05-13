@@ -1,6 +1,10 @@
 <%= form_for @question do |f| %>
   <%= f.label :statement %>
   <%= f.text_field :statement, placeholder: "Your London Fact or Fiction ", autofocus: true %>
+  <%= f.radio_button :fact, true %>
+  <%= f.label :fact_true, 'Fact', class: "statement_fact" %>
+  <%= f.radio_button :fact, false %>
+  <%= f.label :fact_false, 'Fiction', class: "statement_fact" %>  
 
   <%= f.submit %>
 

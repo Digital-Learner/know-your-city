@@ -6,8 +6,8 @@ When(/^I fill in "(.*?)" with "(.*?)"$/) do |field, value|
   fill_in field, :with => value
 end
 
-When(/^I choose "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+When(/^I choose "(.*?)"$/) do |radio|
+  choose(radio)
 end
 
 When(/^I press "(.*?)"$/) do |arg1|
