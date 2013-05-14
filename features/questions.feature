@@ -6,7 +6,5 @@ Feature: Creating statements for quiz
 
   Scenario: Creating statements
     Given I am on the statements create page
-    When I fill in "Statement" with "Tower Bridge is the oldest bridge in London"
-    And I choose "Fact"
-    And I press "Create"
+    When I submit a question with its correct answer
     Then I should see "Thank you for adding to London Fact or Fiction"
