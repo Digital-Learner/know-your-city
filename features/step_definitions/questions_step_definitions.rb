@@ -12,3 +12,14 @@ end
 Then(/^I should see "(.*?)"$/) do |content|
   page.should have_content(content)
 end
+
+Given(/^I submit an invalid form with "(.*?)" and "(.*?)"$/) do |statement, fact|
+  fill_in "Statement", :with => statement
+
+end
+
+When(/^I submit an invalid form$/) do
+  fill_in "Statement", :with => ''
+  click_button("Create")
+end
+
